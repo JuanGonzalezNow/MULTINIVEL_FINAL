@@ -4,7 +4,7 @@ from model.mago import Mago
 from model.arquero import Arquero
 
 def instanciar_personaje(row):
-    """Convierte una fila de la base de datos en un objeto del Modelo."""
+   
     id_p, nombre, clase, nivel, _ = row
     if clase == "Guerrero":
         return Guerrero(nombre, nivel, id_p)
