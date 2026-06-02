@@ -62,8 +62,11 @@ public class Menu {
 
         int nivel = leerEntero("Nivel: ");
 
-        controlador.crearPersonaje(nombre, clase, nivel);
-        System.out.println("Personaje creado.");
+        if (controlador.crearPersonaje(nombre, clase, nivel)) {
+            System.out.println("Personaje creado en MySQL.");
+        } else {
+            System.out.println("No se pudo crear el personaje.");
+        }
     }
 
     private void listarPersonajes() {
