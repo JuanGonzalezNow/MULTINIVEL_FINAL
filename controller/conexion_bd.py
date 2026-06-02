@@ -5,8 +5,8 @@ def obtener_conexion():
     try:
         conexion = mysql.connector.connect(
             host='localhost',
-            user='root',          # Cambia el usuario según tu entorno de MySQL
-            password='root',          # Cambia la contraseña según tu entorno de MySQL
+            user='root',          
+            password='root',      
             database='rpg_manager_db'
         )
         if conexion.is_connected():
